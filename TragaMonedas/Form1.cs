@@ -15,6 +15,12 @@ namespace Juego
     {
         public static ArrayList ranking = new ArrayList();
         private Player player = new Player();
+        /* 
+         * para verificar que puede entrar al casino con la cartera ingresada y las monedas en maquina
+         * 
+        */
+        private bool isValid = false; 
+        
         public Form1()
         {
             InitializeComponent();
@@ -23,16 +29,63 @@ namespace Juego
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             //Inicia el juego de tragaPerras // tragaMonedas
-            player.Nombre = txtNombre.Text;
-            player.Apellido = txtApellido.Text;
-            player.Cartera = txtCartera.Text;
-            // TODO: Cuantas monedas quiere agregar
-            // dependiendo del monto en cartera se puede hacer la transferencia
+            // Manejamos excepciones para verificar algunos datos
+            try
+            {
+                string nombre = txtNombre.Text;
+                string apellido = txtApellido.Text;
+                int cartera = int.Parse(txtCartera.Text);
+                int monedas = int.Parse(txtMonedas.Text);
+
+                if (nombre.Length > 3)
+                {
+                    player.Nombre = nombre;
+                }
+                else
+                {
+                    throw new Exception("No has ingresado un nombre correcto!");
+                }
+
+                if (apellido.Length > 3)
+                {
+                    player.Apellido = apellido;
+                }
+                else
+                {
+                    throw new Exception("No has ingresado un apellido correcto!");
+                }
+                if (cartera > 0 && cartera < 300000)
+                {
+                    player.Cartera = cartera;
+                }
+                else
+                {
+                    throw new Exception("No has ingresado un valor de cartera correcto!");
+                }
+
+                if (monedas > 0 && monedas < cartera)
+                {
+                    // TODO: Cuantas monedas quiere agregar
+                    // dependiendo del monto en cartera se puede hacer la transferencia
+                    player.Monedas = monedas;
+                    // restamos las monedas de la cartera
+                    player.Cartera -= monedas;
+                }
+                else
+                {
+                    throw new Exception("No has ingresado un valor de monedas correcto! (monedas tiene que ser mayor a 0 y menor que tu cartera)");
+                }
+
+                TragaMonedas tragaMonedas = new TragaMonedas();
+                tragaMonedas.obtenerJugador(player);
+                tragaMonedas.Visible = true;
+            }catch(Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             
-            player.Monedas = int.Parse(txtCartera.Text);
-            TragaMonedas tragaMonedas = new TragaMonedas();
-            tragaMonedas.obtenerJugador(player);
-            tragaMonedas.Visible = true;
         }
+
+        
     }
 }

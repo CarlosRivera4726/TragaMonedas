@@ -119,6 +119,7 @@
             this.lblDatos.Size = new System.Drawing.Size(35, 13);
             this.lblDatos.TabIndex = 6;
             this.lblDatos.Text = "";
+            this.lblDatos.BackColor = System.Drawing.Color.Transparent;
             // 
             // TragaMonedas
             // 

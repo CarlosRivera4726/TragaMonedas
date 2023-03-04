@@ -14,9 +14,11 @@ namespace Juego
     public partial class TragaMonedas : Form
     {
         private Player player;
+        private int puntuacion=0;
         public TragaMonedas()
         {
             InitializeComponent();
+            this.lblDatos.Text += puntuacion;
         }
         public void obtenerJugador(Player p1)
         {

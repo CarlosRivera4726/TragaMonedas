@@ -28,6 +28,7 @@ namespace Juego
             string newLine = Environment.NewLine;
             return $"Player: {Nombre + " " +Apellido}" + newLine +
                    $"Estado: {Estado}" + newLine +
+                   $"Cartera: {Cartera}" + newLine +
                    $"Monedas: {Monedas}" + newLine;
         }
     }

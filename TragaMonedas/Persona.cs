@@ -10,14 +10,14 @@ namespace Juego
     {
         private string nombre;
         private string apellido;
-        private string cartera;
+        private int cartera;
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
-        public string Cartera { get => cartera; set => cartera = value; }
+        public int Cartera { get => cartera; set => cartera = value; }
 
         public Persona() { }
-        public Persona(string nombre, string apellido, string cartera)
+        public Persona(string nombre, string apellido, int cartera)
         {
             Nombre = nombre;
             Apellido = apellido;
