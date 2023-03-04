@@ -1,4 +1,4 @@
-﻿namespace TragaMonedas
+﻿namespace Juego
 {
     partial class Form1
     {

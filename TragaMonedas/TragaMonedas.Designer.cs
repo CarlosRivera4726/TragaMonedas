@@ -1,4 +1,4 @@
-﻿namespace TragaMonedas
+﻿namespace Juego
 {
     partial class TragaMonedas
     {
@@ -28,11 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TragaMonedas));
             this.pBValue1 = new System.Windows.Forms.PictureBox();
             this.pBValue2 = new System.Windows.Forms.PictureBox();
             this.pBValue3 = new System.Windows.Forms.PictureBox();
             this.lblPuntaje = new System.Windows.Forms.Label();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.lblDatos = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue3)).BeginInit();
@@ -77,16 +82,58 @@
             this.lblPuntaje.TabIndex = 3;
             this.lblPuntaje.Text = "Puntaje: ";
             // 
+            // btnIniciar
+            // 
+            this.btnIniciar.Location = new System.Drawing.Point(884, 233);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(103, 62);
+            this.btnIniciar.TabIndex = 4;
+            this.btnIniciar.Text = "Iniciar";
+            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.ImageIndex = 0;
+            this.btnSalir.ImageList = this.imageList1;
+            this.btnSalir.Location = new System.Drawing.Point(884, 318);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(103, 61);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Salir.png");
+            // 
+            // lblDatos
+            // 
+            this.lblDatos.AutoSize = true;
+            this.lblDatos.Location = new System.Drawing.Point(28, 17);
+            this.lblDatos.Name = "lblDatos";
+            this.lblDatos.Size = new System.Drawing.Size(35, 13);
+            this.lblDatos.TabIndex = 6;
+            this.lblDatos.Text = "label1";
+            // 
             // TragaMonedas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1019, 553);
+            this.Controls.Add(this.lblDatos);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.lblPuntaje);
             this.Controls.Add(this.pBValue3);
             this.Controls.Add(this.pBValue2);
             this.Controls.Add(this.pBValue1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TragaMonedas";
             this.Text = "TragaMonedas";
             ((System.ComponentModel.ISupportInitialize)(this.pBValue1)).EndInit();
@@ -103,5 +150,9 @@
         private System.Windows.Forms.PictureBox pBValue2;
         private System.Windows.Forms.PictureBox pBValue3;
         private System.Windows.Forms.Label lblPuntaje;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label lblDatos;
     }
 }

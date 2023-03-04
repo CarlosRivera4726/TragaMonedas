@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TragaMonedas
+namespace Juego
 {
-    internal class Player : Persona
+    public class Player : Persona
     {
         private int monedas;
         private bool estado;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TragaMonedas
+namespace Juego
 {
-    internal class Persona
+    public class Persona
     {
         private string nombre;
         private string apellido;

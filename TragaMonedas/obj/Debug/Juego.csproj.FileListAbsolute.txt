@@ -1,0 +1,7 @@
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.AssemblyReference.cache
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.SuggestedBindingRedirects.cache
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.Form1.resources
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.Properties.Resources.resources
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.TragaMonedas.resources
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.GenerateResource.cache
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.CoreCompileInputs.cache

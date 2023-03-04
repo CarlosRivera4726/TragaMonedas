@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2C3342EF-45BD-42CE-8E8D-4C5540A7D342}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TragaMonedas</RootNamespace>
-    <AssemblyName>TragaMonedas</AssemblyName>
+    <RootNamespace>Juego</RootNamespace>
+    <AssemblyName>Juego</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -73,6 +73,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TragaMonedas.resx">
       <DependentUpon>TragaMonedas.cs</DependentUpon>
