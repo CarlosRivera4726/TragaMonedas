@@ -8,14 +8,15 @@ namespace TragaMonedas
 {
     internal class Player : Persona
     {
-        private string monedas;
+        private int monedas;
         private bool estado;
+        private int puntos;
 
-        public string Monedas { get => monedas; set => monedas = value; }
+        public int Monedas { get => monedas; set => monedas = value; }
         public bool Estado { get => estado; set => estado = value; }
 
         public Player() { }
-        public Player(string monedas, bool estado)
+        public Player(int monedas, bool estado)
         {
             Monedas = monedas;
             Estado = estado;
