@@ -18,7 +18,7 @@ namespace Juego
         public TragaMonedas()
         {
             InitializeComponent();
-            this.lblDatos.Text += puntuacion;
+            this.lblPuntaje.Text += puntuacion;
         }
         public void obtenerJugador(Player p1)
         {

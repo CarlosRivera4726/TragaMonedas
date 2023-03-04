@@ -65,7 +65,7 @@ namespace Juego
 
                 if (monedas > 0 && monedas < cartera)
                 {
-                    // TODO: Cuantas monedas quiere agregar
+                    // realizado: Cuantas monedas quiere agregar
                     // dependiendo del monto en cartera se puede hacer la transferencia
                     player.Monedas = monedas;
                     // restamos las monedas de la cartera
