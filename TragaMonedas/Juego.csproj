@@ -91,5 +91,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\default\defaultValue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\gif\init.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\gif\last.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\gif\mid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\ARRACAHA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\chili.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\frijol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\lechuga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\papa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\values\statics\yuca.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtMonedas = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnIniciarSesion = new System.Windows.Forms.Button();
@@ -41,8 +43,6 @@
             this.lblApellido = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.txtMonedas = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,25 @@
             this.panel1.Size = new System.Drawing.Size(348, 243);
             this.panel1.TabIndex = 0;
             // 
+            // txtMonedas
+            // 
+            this.txtMonedas.Location = new System.Drawing.Point(133, 149);
+            this.txtMonedas.Name = "txtMonedas";
+            this.txtMonedas.Size = new System.Drawing.Size(128, 20);
+            this.txtMonedas.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(60, 152);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Monedas:";
+            // 
             // button1
             // 
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -73,7 +92,7 @@
             this.button1.Location = new System.Drawing.Point(186, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Ranking";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = true;
@@ -89,7 +108,7 @@
             this.btnIniciarSesion.Location = new System.Drawing.Point(83, 183);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
             this.btnIniciarSesion.Size = new System.Drawing.Size(75, 23);
-            this.btnIniciarSesion.TabIndex = 8;
+            this.btnIniciarSesion.TabIndex = 5;
             this.btnIniciarSesion.Text = "Iniciar";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
             this.btnIniciarSesion.Click += new System.EventHandler(this.btnIniciarSesion_Click);
@@ -109,21 +128,21 @@
             this.txtCartera.Location = new System.Drawing.Point(133, 122);
             this.txtCartera.Name = "txtCartera";
             this.txtCartera.Size = new System.Drawing.Size(128, 20);
-            this.txtCartera.TabIndex = 6;
+            this.txtCartera.TabIndex = 3;
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(133, 96);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(128, 20);
-            this.txtApellido.TabIndex = 5;
+            this.txtApellido.TabIndex = 2;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(133, 70);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(128, 20);
-            this.txtNombre.TabIndex = 4;
+            this.txtNombre.TabIndex = 1;
             // 
             // lblApellido
             // 
@@ -160,25 +179,6 @@
             this.lblNombre.Size = new System.Drawing.Size(54, 13);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
-            // 
-            // txtMonedas
-            // 
-            this.txtMonedas.Location = new System.Drawing.Point(133, 149);
-            this.txtMonedas.Name = "txtMonedas";
-            this.txtMonedas.Size = new System.Drawing.Size(128, 20);
-            this.txtMonedas.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(60, 152);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Monedas:";
             // 
             // Form1
             // 

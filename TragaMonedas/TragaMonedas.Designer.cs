@@ -38,6 +38,8 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.lblDatos = new System.Windows.Forms.Label();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.btnDetener = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBValue3)).BeginInit();
@@ -54,7 +56,7 @@
             // 
             // pBValue2
             // 
-            this.pBValue2.Image = ((System.Drawing.Image)(resources.GetObject("pBValue2.Image")));
+            this.pBValue2.Image = global::Juego.Properties.Resources.defaultValue;
             this.pBValue2.Location = new System.Drawing.Point(391, 233);
             this.pBValue2.Name = "pBValue2";
             this.pBValue2.Size = new System.Drawing.Size(147, 155);
@@ -63,7 +65,7 @@
             // 
             // pBValue3
             // 
-            this.pBValue3.Image = ((System.Drawing.Image)(resources.GetObject("pBValue3.Image")));
+            this.pBValue3.Image = global::Juego.Properties.Resources.defaultValue;
             this.pBValue3.Location = new System.Drawing.Point(578, 233);
             this.pBValue3.Name = "pBValue3";
             this.pBValue3.Size = new System.Drawing.Size(148, 155);
@@ -97,7 +99,7 @@
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.ImageIndex = 0;
             this.btnSalir.ImageList = this.imageList1;
-            this.btnSalir.Location = new System.Drawing.Point(884, 318);
+            this.btnSalir.Location = new System.Drawing.Point(884, 369);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(103, 61);
             this.btnSalir.TabIndex = 5;
@@ -114,12 +116,33 @@
             // lblDatos
             // 
             this.lblDatos.AutoSize = true;
+            this.lblDatos.BackColor = System.Drawing.Color.Transparent;
             this.lblDatos.Location = new System.Drawing.Point(28, 17);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(35, 13);
+            this.lblDatos.Size = new System.Drawing.Size(0, 13);
             this.lblDatos.TabIndex = 6;
-            this.lblDatos.Text = "";
-            this.lblDatos.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList2.Images.SetKeyName(0, "defaultValue.png");
+            this.imageList2.Images.SetKeyName(1, "ARRACAHA.png");
+            this.imageList2.Images.SetKeyName(2, "chili.png");
+            this.imageList2.Images.SetKeyName(3, "frijol.png");
+            this.imageList2.Images.SetKeyName(4, "lechuga.png");
+            this.imageList2.Images.SetKeyName(5, "papa.png");
+            this.imageList2.Images.SetKeyName(6, "yuca.png");
+            // 
+            // btnDetener
+            // 
+            this.btnDetener.Location = new System.Drawing.Point(884, 301);
+            this.btnDetener.Name = "btnDetener";
+            this.btnDetener.Size = new System.Drawing.Size(103, 62);
+            this.btnDetener.TabIndex = 7;
+            this.btnDetener.Text = "Detener";
+            this.btnDetener.UseVisualStyleBackColor = true;
+            this.btnDetener.Click += new System.EventHandler(this.btnDetener_Click);
             // 
             // TragaMonedas
             // 
@@ -127,6 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1019, 553);
+            this.Controls.Add(this.btnDetener);
             this.Controls.Add(this.lblDatos);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIniciar);
@@ -155,5 +179,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label lblDatos;
+        private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Button btnDetener;
     }
 }
