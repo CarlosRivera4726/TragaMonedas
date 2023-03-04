@@ -20,12 +20,15 @@ namespace Juego
         }
         public void obtenerJugador(Player p1)
         {
-            this.player = p1;
+            player = p1;
+            lblDatos.Text = p1.ToString();
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-
+            //TODO: Se necesita cambiar ls imagenes defaul por unos gift y despues de detener la maquina
+            // se coloquen imagenes de forma aleatoria y dependiendo de los resultados se dara un premio
+            // o se quitara una puntuacion
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -33,5 +36,7 @@ namespace Juego
             this.Dispose();
             Form1.ranking.Add(player);
         }
+
+       
     }
 }

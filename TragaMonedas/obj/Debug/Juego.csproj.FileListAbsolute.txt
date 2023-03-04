@@ -5,3 +5,8 @@ E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.Properties.Resources.r
 E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.TragaMonedas.resources
 E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.GenerateResource.cache
 E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.CoreCompileInputs.cache
+E:\source\repos\TragaMonedas\TragaMonedas\bin\Debug\Juego.exe.config
+E:\source\repos\TragaMonedas\TragaMonedas\bin\Debug\Juego.exe
+E:\source\repos\TragaMonedas\TragaMonedas\bin\Debug\Juego.pdb
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.exe
+E:\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.pdb

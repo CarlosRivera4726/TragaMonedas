@@ -26,7 +26,10 @@ namespace Juego
             player.Nombre = txtNombre.Text;
             player.Apellido = txtApellido.Text;
             player.Cartera = txtCartera.Text;
-            player.Monedas = int.Parse(txtNombre.Text);
+            // TODO: Cuantas monedas quiere agregar
+            // dependiendo del monto en cartera se puede hacer la transferencia
+            
+            player.Monedas = int.Parse(txtCartera.Text);
             TragaMonedas tragaMonedas = new TragaMonedas();
             tragaMonedas.obtenerJugador(player);
             tragaMonedas.Visible = true;

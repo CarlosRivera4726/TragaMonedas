@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Juego
 {
@@ -15,11 +16,19 @@ namespace Juego
         public int Monedas { get => monedas; set => monedas = value; }
         public bool Estado { get => estado; set => estado = value; }
 
-        public Player() { }
+        public Player() { Estado = true; }
         public Player(int monedas, bool estado)
         {
             Monedas = monedas;
             Estado = estado;
+        }
+
+        public override string ToString()
+        {
+            string newLine = Environment.NewLine;
+            return $"Player: {Nombre + " " +Apellido}" + newLine +
+                   $"Estado: {Estado}" + newLine +
+                   $"Monedas: {Monedas}" + newLine;
         }
     }
 }

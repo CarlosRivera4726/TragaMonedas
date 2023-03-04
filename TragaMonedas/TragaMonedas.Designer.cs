@@ -118,7 +118,7 @@
             this.lblDatos.Name = "lblDatos";
             this.lblDatos.Size = new System.Drawing.Size(35, 13);
             this.lblDatos.TabIndex = 6;
-            this.lblDatos.Text = "label1";
+            this.lblDatos.Text = "";
             // 
             // TragaMonedas
             // 
