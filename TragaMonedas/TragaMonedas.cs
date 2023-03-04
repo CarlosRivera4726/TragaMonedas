@@ -76,9 +76,28 @@ namespace Juego
         {
             // el resultado y vamos a cambiar a los estaticos de forma aleatoria
             // desde el 1 al 6 van a estar los estaticos
-            pBValue1.Image = imageList2.Images[1];
-            pBValue2.Image = imageList2.Images[1];
-            pBValue3.Image = imageList2.Images[1];
+            Random rnd = new Random();
+            // valores de .Next(), minimo incluido, maximo excluido, como vamos de 
+            // 1 hasta 6 sumamos uno
+            int init = rnd.Next(1, 7);
+            int mid = rnd.Next(1, 7);
+            int last = rnd.Next(1, 7);
+            pBValue1.Image = imageList2.Images[init];
+            pBValue2.Image = imageList2.Images[mid];
+            pBValue3.Image = imageList2.Images[last];
+
+            if(init == mid || init == last)
+            {
+                lblPuntaje.Text += (puntuacion + 5);
+            }
+            if (mid == last)
+            {
+                lblPuntaje.Text = "Puntaje: " + (puntuacion + 5);
+            }
+            if(init != mid && init != last ) 
+            {
+                MessageBox.Show("No ganaste ningun punto", ":(", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
