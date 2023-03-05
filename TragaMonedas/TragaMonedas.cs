@@ -37,6 +37,7 @@ namespace Juego
             // o se quitara una puntuacion, por supuesto se bajaran las monedas en numeros pares hasta que haya 0, si tiene
             // en cartera se le preguntara si quiere agregar más, caso contrario se saldra de la aplicacion y terminara el juego
             btnDetener.Enabled = true;
+            btnIniciar.Enabled = false;
             pBValue1.Image = Juego.Properties.Resources.init;
             pBValue2.Image = Juego.Properties.Resources.mid;
             pBValue3.Image = Juego.Properties.Resources.last;
@@ -89,6 +90,7 @@ namespace Juego
             // el resultado y vamos a cambiar a los estaticos de forma aleatoria
             // desde el 1 al 6 van a estar los estaticos
             btnDetener.Enabled = false;
+            btnIniciar.Enabled = true;
             reproductor.Stop();
             Random rnd = new Random();
             // valores de .Next(), minimo incluido, maximo excluido, como vamos de 
