@@ -82,19 +82,26 @@ namespace Juego
             int init = rnd.Next(1, 7);
             int mid = rnd.Next(1, 7);
             int last = rnd.Next(1, 7);
+
             pBValue1.Image = imageList2.Images[init];
             pBValue2.Image = imageList2.Images[mid];
             pBValue3.Image = imageList2.Images[last];
-
+            if (init == mid && mid == last && init == last)
+            {
+                puntuacion += 15;
+                lblPuntaje.Text = "Puntaje: " + (puntuacion);
+            }
             if(init == mid || init == last)
             {
-                lblPuntaje.Text += (puntuacion + 5);
+                puntuacion += 5;
+                lblPuntaje.Text = "Puntaje: " + (puntuacion);
             }
             if (mid == last)
             {
-                lblPuntaje.Text = "Puntaje: " + (puntuacion + 5);
+                puntuacion += 5;
+                lblPuntaje.Text = "Puntaje: " + (puntuacion);
             }
-            if(init != mid && init != last ) 
+            if(init != mid && init != last && mid != last) 
             {
                 MessageBox.Show("No ganaste ningun punto", ":(", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
