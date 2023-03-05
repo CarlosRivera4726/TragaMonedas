@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace Juego
         private Player player;
         private int puntuacion=0;
         private const int VALUE_COIN = 4;
+        private SoundPlayer reproductor;
         public TragaMonedas()
         {
             InitializeComponent();
@@ -34,11 +36,20 @@ namespace Juego
             // se coloquen imagenes de forma aleatoria y dependiendo de los resultados se dara un premio
             // o se quitara una puntuacion, por supuesto se bajaran las monedas en numeros pares hasta que haya 0, si tiene
             // en cartera se le preguntara si quiere agregar más, caso contrario se saldra de la aplicacion y terminara el juego
-            
+            btnDetener.Enabled = true;
             pBValue1.Image = Juego.Properties.Resources.init;
             pBValue2.Image = Juego.Properties.Resources.mid;
             pBValue3.Image = Juego.Properties.Resources.last;
-            if(player.Monedas > 0)
+            // TODO: reproductor de sonido
+
+            /*
+             * System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
+             * player.Play();
+             * 
+             */
+            reproductor = new SoundPlayer(@"E:\source\repos\TragaMonedas\TragaMonedas\resources\sonido.wav");
+            reproductor.Play();
+            if (player.Monedas > 0)
             {
                 player.Monedas -= VALUE_COIN;
                 lblDatos.Text = player.ToString();
@@ -70,12 +81,15 @@ namespace Juego
         {
             this.Dispose();
             Form1.ranking.Add(player);
+            reproductor.Stop();
         }
 
         private void btnDetener_Click(object sender, EventArgs e)
         {
             // el resultado y vamos a cambiar a los estaticos de forma aleatoria
             // desde el 1 al 6 van a estar los estaticos
+            btnDetener.Enabled = false;
+            reproductor.Stop();
             Random rnd = new Random();
             // valores de .Next(), minimo incluido, maximo excluido, como vamos de 
             // 1 hasta 6 sumamos uno
@@ -86,25 +100,23 @@ namespace Juego
             pBValue1.Image = imageList2.Images[init];
             pBValue2.Image = imageList2.Images[mid];
             pBValue3.Image = imageList2.Images[last];
-            if (init == mid && mid == last && init == last)
+            // TODO: resolver las condicionales XD
+
+            if (init == mid && init == last && mid == last)
             {
                 puntuacion += 15;
-                lblPuntaje.Text = "Puntaje: " + (puntuacion);
             }
-            if(init == mid || init == last)
+            else if (init == mid || init == last || mid == last)
             {
                 puntuacion += 5;
-                lblPuntaje.Text = "Puntaje: " + (puntuacion);
             }
-            if (mid == last)
-            {
-                puntuacion += 5;
-                lblPuntaje.Text = "Puntaje: " + (puntuacion);
-            }
-            if(init != mid && init != last && mid != last) 
+            else if (init != mid && init != last && mid != last)
             {
                 MessageBox.Show("No ganaste ningun punto", ":(", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+            lblPuntaje.Text = $"Puntaje: {puntuacion}";
+            
         }
     }
 }

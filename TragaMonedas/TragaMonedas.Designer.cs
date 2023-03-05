@@ -136,6 +136,7 @@
             // 
             // btnDetener
             // 
+            this.btnDetener.Enabled = false;
             this.btnDetener.Location = new System.Drawing.Point(884, 301);
             this.btnDetener.Name = "btnDetener";
             this.btnDetener.Size = new System.Drawing.Size(103, 62);
