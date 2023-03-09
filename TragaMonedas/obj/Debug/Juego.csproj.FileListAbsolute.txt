@@ -22,3 +22,4 @@ C:\Users\Estudiante\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.cspro
 C:\Users\Estudiante\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.exe
 C:\Users\Estudiante\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.pdb
+C:\Users\Estudiante\source\repos\TragaMonedas\TragaMonedas\obj\Debug\Juego.Ranking.resources

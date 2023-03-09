@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtMonedas = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRanking = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnIniciarSesion = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Controls.Add(this.txtMonedas);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnRanking);
             this.panel1.Controls.Add(this.btnIniciarSesion);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.txtCartera);
@@ -84,18 +84,19 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Monedas:";
             // 
-            // button1
+            // btnRanking
             // 
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageIndex = 0;
-            this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(186, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Ranking";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRanking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRanking.ImageIndex = 0;
+            this.btnRanking.ImageList = this.imageList1;
+            this.btnRanking.Location = new System.Drawing.Point(186, 183);
+            this.btnRanking.Name = "btnRanking";
+            this.btnRanking.Size = new System.Drawing.Size(75, 23);
+            this.btnRanking.TabIndex = 6;
+            this.btnRanking.Text = "Ranking";
+            this.btnRanking.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRanking.UseVisualStyleBackColor = true;
+            this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
             // 
             // imageList1
             // 
@@ -205,7 +206,7 @@
         private System.Windows.Forms.TextBox txtCartera;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRanking;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TextBox txtMonedas;
         private System.Windows.Forms.Label label1;

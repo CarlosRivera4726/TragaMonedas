@@ -31,6 +31,7 @@ namespace Juego
             return $"Player: {Nombre + " " +Apellido}" + newLine +
                    $"Estado: {Estado}" + newLine +
                    $"Cartera: {Cartera}" + newLine +
+                   $"Puntos: {Puntos}" + newLine +
                    $"Monedas: {Monedas}" + newLine;
         }
     }

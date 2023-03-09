@@ -13,7 +13,7 @@ namespace Juego
 {
     public partial class Form1 : Form
     {
-        public static ArrayList ranking = new ArrayList();
+        public static ArrayList rankings = new ArrayList();
         private Player player = new Player();
         
         
@@ -82,6 +82,17 @@ namespace Juego
             
         }
 
-        
+        private void btnRanking_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Ranking ranking = new Ranking();
+                ranking.llenarRanking(rankings);
+                ranking.Visible = true;
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

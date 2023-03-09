@@ -18,7 +18,7 @@ namespace Juego
     {
         private Player player;
         private int puntuacion=0;
-        private const int VALUE_COIN = 4;
+        private const int VALUE_COIN = 50;
         private SoundPlayer reproductor;
         public TragaMonedas()
         {
@@ -86,7 +86,7 @@ namespace Juego
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Form1.ranking.Add(player);
+            Form1.rankings.Add(player);
             reproductor.Stop();
         }
 
