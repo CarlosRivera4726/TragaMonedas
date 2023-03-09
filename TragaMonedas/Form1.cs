@@ -15,11 +15,7 @@ namespace Juego
     {
         public static ArrayList ranking = new ArrayList();
         private Player player = new Player();
-        /* 
-         * para verificar que puede entrar al casino con la cartera ingresada y las monedas en maquina
-         * 
-        */
-        private bool isValid = false; 
+        
         
         public Form1()
         {

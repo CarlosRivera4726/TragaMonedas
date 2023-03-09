@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -48,7 +49,11 @@ namespace Juego
              * player.Play();
              * 
              */
-            reproductor = new SoundPlayer(@"E:\source\repos\TragaMonedas\TragaMonedas\resources\sonido.wav");
+            string sCurrentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string sFile = System.IO.Path.Combine(sCurrentDirectory, @"..\..\resources\sonido.wav");
+            string sFilePath = Path.GetFullPath(sFile);
+            //MessageBox.Show(sFilePath);
+            reproductor = new SoundPlayer(sFilePath);
             reproductor.Play();
             if (player.Monedas > 0)
             {
@@ -118,6 +123,7 @@ namespace Juego
             }
 
             lblPuntaje.Text = $"Puntaje: {puntuacion}";
+            player.Puntos = puntuacion;
             
         }
     }

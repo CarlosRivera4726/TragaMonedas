@@ -15,12 +15,14 @@ namespace Juego
 
         public int Monedas { get => monedas; set => monedas = value; }
         public bool Estado { get => estado; set => estado = value; }
+        public int Puntos { get => puntos; set => puntos = value; }
 
         public Player() { Estado = true; }
-        public Player(int monedas, bool estado)
+        public Player(int monedas, bool estado, int puntos)
         {
             Monedas = monedas;
             Estado = estado;
+            Puntos = puntos;
         }
 
         public override string ToString()
